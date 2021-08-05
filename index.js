@@ -36,6 +36,7 @@ const sleep = promisify(setTimeout);
     repo
   })
 
+  // Pequeño hack porque la transferencia del repo no es instantánea.
   await sleep(1000);
 
   console.log('🚀 Renombrando repo...')
